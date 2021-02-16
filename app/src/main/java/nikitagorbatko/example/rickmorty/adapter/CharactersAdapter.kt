@@ -41,6 +41,8 @@ class CharactersAdapter(private val listener: OnItemClickListener): RecyclerView
         holder.name.text = charactersCopy[position].name
     }
 
+    //TODO diffutil
+
     override fun getItemCount(): Int = charactersCopy.size
 
     fun interface OnItemClickListener {
